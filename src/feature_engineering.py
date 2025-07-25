@@ -50,8 +50,8 @@ if __name__ == "__main__":
     # --- Load the propagated states DataFrame ---
     today_str = datetime.utcnow().strftime('%Y%m%d')
 
-    num_sats = 100 
-    prop_hours = 1
+    num_sats = 1000
+    prop_hours = 6
     step_minutes = 5
     
     propagated_filename = (

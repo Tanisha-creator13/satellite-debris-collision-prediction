@@ -77,8 +77,8 @@ if __name__ == "__main__":
 
     # --- Propagate orbits ---
     all_propagated_data = []
-    num_satellites_to_propagate = 100 # Propagate only the first N satellites for a quick test
-    propagation_hours = 1 # Propagate for this many hours from each TLE's epoch
+    num_satellites_to_propagate = 1000 # Propagate only the first N satellites for a quick test
+    propagation_hours = 6 # Propagate for this many hours from each TLE's epoch
     propagation_time_step_minutes = 5 # Calculate a state every X minutes
 
     print(f"\nStarting orbit propagation for the first {num_satellites_to_propagate} satellites.")

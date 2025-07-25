@@ -93,9 +93,9 @@ if __name__ =="__main__":
 
     # Model Initialization 
     input_size = num_features  # Number of features per time step 
-    hidden_size = 64          # Number of features in the hidden state of the LSTM
+    hidden_size = 128        # Number of features in the hidden state of the LSTM
     output_size = num_features # Predicting the same 6 features
-    num_layers = 2            # Number of stacked LSTM layers
+    num_layers = 3           # Number of stacked LSTM layers
 
     model = OrbitPredictorLSTM(input_size, hidden_size, output_size, num_layers)
 
@@ -111,7 +111,7 @@ if __name__ =="__main__":
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
     # Training Loop 
-    num_epochs = 50 
+    num_epochs = 200
     
     print(f"\nStarting training for {num_epochs} epochs...")
     for epoch in range(num_epochs):

@@ -86,9 +86,9 @@ if __name__ == "__main__":
     
     # Model Initialization and Loading 
     input_size = num_features  
-    hidden_size = 64          
+    hidden_size = 128         
     output_size = num_features 
-    num_layers = 2            
+    num_layers =3          
 
     model = OrbitPredictorLSTM(input_size, hidden_size, output_size, num_layers)
 
